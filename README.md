@@ -75,13 +75,16 @@ https://github.com/pranavshirali/IPL-Score-Predictor.git
 2. Run the IPL Score Predictor script:
 ```
 python ipl_score_predictor.py
+or
+streamlit run streamlit.py
 ```
 >[!NOTE]
->Make sure Python complier and below libraries are installed in your PC
+>Make sure Python complier, streamlit and below libraries are installed in your PC
 
 Installation:
 ```
 pip install pandas numpy scikit-learn
+pip install streamlit
 ```
 If you're using Jupyter Notebooks or a similar environment, you might also want to install the required libraries for data visualization if not already installed:
 ```
