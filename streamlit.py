@@ -1,6 +1,5 @@
 # Importing essential libraries
 import pandas as pd
-import numpy as np
 from sklearn.linear_model import LinearRegression
 import streamlit as st
 
@@ -23,7 +22,8 @@ def load_and_preprocess_data(file_path):
 
     # Converting the column 'date' from string into datetime object
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
-
+    
+    #Dropping rows where the 'date' is missing.
     df.dropna(subset=['date'], inplace=True)
 
     # Converting categorical features using OneHotEncoding method
